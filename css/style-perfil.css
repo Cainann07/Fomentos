@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Kotta+One&display=swap');
+*{
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Kotta One', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #ffff;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+	max-width:1100px;
+}
+.painel-central{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.form {
+    position: relative;
+    left: 38%;
+    width: 900px;
+    height: 550px;
+    background-color: #F2EFEF;
+    border-radius: 20px;
+    margin: 50px 0px 50px 0px;
+}
+
+/* Propriedades para definirem o posicionamento dos itens do cabeçalho */
+.lista {
+    list-style: none;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+
+.lista a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.lista li {
+    margin: 0 15px;
+}
+
+/* Essas propriedades abaixo definem o estilo dos botões do cabeçalho. */
+.lista button {
+    background-color: #628C4F;
+    color: black;
+    border-radius: 10em;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+.lista button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+
+.lista button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
+
+.barradenavegacao {
+    position: relative;
+    top: 20px;
+}
+
+/* Essas propriedades definem a cor e o tamamnho do cabeçalho. */
+header {
+    background-color: #628C4F;
+    height: 80px;
+    margin: 0;
+}
+
+/* Essas propriedades definem o tamanho e a posição da logo do site no cabeçalho. */
+header img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 20px;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+/* Essas propriedades definem o estilo e posicionamento do nome 'Fomentos' */
+.fomentos {
+    position: absolute;
+    left: 17%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 15px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Fim Estilo para o cabeçalho */
+/*
+main{
+    padding-left: 40px;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.main-div-config{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}*/
+.main-div-config {
+	margin-right: 50px;
+}
+
+.main-div-config img{
+	width: 250px;
+	height: 250px;
+	margin-bottom: 50px;
+}
+.main-div-config-a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 5px;
+}
+.main-div-config-a a{
+    color: #000;
+    font-family:'Khula';
+    font-size: 20px;
+    font-weight: 600;
+}
+.main-div-dados{
+	margin-left: 50px;
+    padding-top: 20px;
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-div-dados h2{
+    padding-top: 10px;
+    color: #000;
+    font-family: 'Khula';
+    font-size: 30px;
+    font-weight: 600;
+}
+.h5{
+	font-size: 16px;
+}
+.Email{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.genero{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#email-pedro{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+textarea{
+    width: 300px;
+    height: 150px;
+    background: transparent;
+    border: 2px solid #000;
+}
+.desativar-conta{
+    width: 310px;
+height: 50px;
+background-color: #fff;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+.desativar-conta div a {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.desativar-conta div h5 {
+    color: #000;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+}
+#desativar{
+    color: #649552;
+font-size: 12px;
+text-align: center;
+padding-top: 10px;
+}
+
+.a-preto:hover{
+    text-decoration: underline;
+}
+.a-verde:hover{
+    text-decoration: underline;
+    text-decoration-color: #649552;
+}
+
+/* Estilo Rodapé */
+footer {
+	width: 100%;
+	height: 30%;
+	background-color: #649553;
+}
+
+.menu-rodape {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-rodape li {
+	display: inline-block;
+	text-align: center;
+	padding: 15px;
+	font-size: 22px;
+}
+
+.menu-rodape a {
+	color: #222222;
+}
+
+.menu-rodape a:hover {
+	color: #fff;
+	transition: 0.3s all;
+}
+
+.informacoes-finais {
+	padding: 10px;
+}
+
+.informacoes-finais p {
+	text-align: center;
+}
+
+.informacoes-finais img {
+	text-align: center;
+}
+
+.lista-rodape {
+	position: relative;
+    right: 1%;
+}
+.centralizar{
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Fim Estilo Rodapé */

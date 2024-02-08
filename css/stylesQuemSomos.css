@@ -1,0 +1,342 @@
+body{
+    background: white;
+}
+
+.container-controlador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px 5px 0 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.quadro{
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    color: #222222;
+    background-color: #F1F0EE;
+}
+
+h1 {
+    color: #628C4F;
+    padding: 10px;
+    text-align: center;
+}
+
+.quadro p{
+    font-size: 20px;
+    margin: 25px;
+}
+
+
+
+/* Propriedades para definirem o posicionamento dos itens do cabeçalho */
+.lista {
+    list-style: none;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+
+.lista a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.lista li {
+    margin: 0 15px;
+}
+
+/* Essas propriedades abaixo definem o estilo dos botões do cabeçalho. */
+.lista button {
+    background-color: #628C4F;
+    color: black;
+    border-radius: 10em;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+.lista button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+
+.lista button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
+
+.barradenavegacao {
+    position: relative;
+    top: 20px;
+}
+
+.alinhamentoCabeçalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Essas propriedades definem a cor e o tamamnho do cabeçalho. */
+header {
+    background-color: #628C4F;
+    height: 80px;
+    margin: 0;
+}
+
+/* Essas propriedades definem o tamanho e a posição da logo do site no cabeçalho. */
+header img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+/* Essas propriedades definem o estilo e posicionamento do nome 'Fomentos' */
+.fomentos {
+    position: absolute;
+    left: 17%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 15px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nomeUsuario {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Kotta One';
+    size: 16px;
+}
+
+.dadosUsuario {
+    font-family: 'Kotta One';
+    size: 13px;
+    color: #649552;
+    display: flex;
+    border: none; 
+      
+}
+
+.comentario {
+    font-family: 'Kotta One';
+    size: 16px;
+    background: url(../img/caixa.png), lightgray 50% / cover no-repeat;
+    width: 306px;
+    height: 65px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+input {
+    font-family: 'Kotta One';
+    size: 16px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0 none;
+    box-sizing: border-box;
+    flex: 1; 
+    margin: 0; 
+    padding: 0;
+    height: 40px;
+}
+
+.info {
+    margin-left: 10px;
+    font-family: 'Kotta One';
+    size: 16px;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 30px;
+    color: #F1F0EE;
+    background-color: #649552;
+    border: none;
+    border-radius: 3px;
+    
+   
+}
+
+.info:hover {
+    margin-left: 10px;
+    font-family: 'Kotta One';
+    size: 16px;
+    transition: 1s;
+    color: #F1F0EE;
+    background-color: #82bf6c;
+    text-decoration: none;
+    
+
+    
+    
+}
+
+iframe{
+    height: 90vh;
+    border:solid 1px #989797;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+.flexrow{
+    display: flex; 
+    flex-direction: row;
+}
+
+.flexcolumn{
+    display: flex; 
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.user{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly; 
+}
+
+.mensagens{
+    font-family: Khula;
+}
+
+.comentarioDireita{
+    display: flex; 
+    position: absolute; 
+    right: 10px;
+    top:178px;
+}
+
+.comentarioEsquerda{
+    margin-left: 10px; 
+    position: absolute;
+    top:266px;
+}
+
+.resposta{
+    display: flex; 
+    position: absolute; 
+    bottom: 0; 
+    margin-left:10px;
+    width: 77%;
+    align-items: baseline;
+}
+.afastar{
+    font-family: 'Kotta One';
+    size: 13px;
+    color: #649552;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.afastar:hover{
+    font-family: 'Kotta One';
+    size: 13px;
+    color: #649552;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.nomeUsuarioMensagens {
+    margin-left:10px;
+    margin-right:15px;
+}
+
+#quem-somos {
+    padding: 15px;
+}
+
+#btn-retornar-quem-somos {
+    margin: 10px;
+}
+
+#btn-retornar-quem-somos a {
+    color: #fff;
+    border-bottom: none;
+
+}
+
+.trabalhe-conosco {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+
+
+}
+
+.trabalhe-conosco input {
+    margin: 10px;
+    width: 500px;
+    border: 1px solid #fd8a24;
+
+}
+
+#quem-somos{
+    padding: 15px;
+}
+
+
+/* Estilo Rodapé */
+footer {
+	width: 100%;
+	height: 30%;
+	background-color: #649553;
+}
+
+.menu-rodape {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-rodape li {
+	display: inline-block;
+	text-align: center;
+	padding: 15px;
+	font-size: 22px;
+}
+
+.menu-rodape a {
+	color: #222222;
+}
+
+.menu-rodape a:hover {
+	color: #fff;
+	transition: 0.3s all;
+}
+
+.informacoes-finais {
+	padding: 10px;
+}
+
+.informacoes-finais p {
+	text-align: center;
+}
+
+.informacoes-finais img {
+	text-align: center;
+}
+
+.lista-rodape {
+	position: relative;
+    right: 1%;
+}
+
+/*Fim Estilo Rodapé */
